@@ -55,12 +55,13 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Provider as PaperProvider } from "react-native-paper";
 // import Galleryimages from "./Galleryimages.jsx";
 // import Sharesheet from "./Sharesheet.jsx";
-import CameraAccess from "./CameraAccess";
+// import CameraAccess from "./CameraAccess";
+import Microphone from "./Microphone"
 const App = () =>{
   return(
      <SafeAreaProvider>
       <PaperProvider>
-        <CameraAccess />
+        <Microphone/>
       </PaperProvider>
      </SafeAreaProvider>
   )
