@@ -1,20 +1,69 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import React from "react";
+// import { SafeAreaProvider } from "react-native-safe-area-context";
+// import { Provider as PaperProvider } from "react-native-paper";
+// import Task from "./Task.jsx"
+// import Task1 from "./Task1.jsx"
+// import { NavigationContainer } from "@react-navigation/native";
+// import { createNativeStackNavigator } from "@react-navigation/native-stack";
+// import { Icon } from "react-native-paper";
+// const App = ()=>{
+//   const Stack =createNativeStackNavigator();
+//   return (  
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+//     <SafeAreaProvider>
+//       <PaperProvider>
+//         <NavigationContainer>
+//           {/* <Stack.Navigator screenOptions={
+//             {
+//               // title:"Tharun",
+//               // headerShown:false
+//               headerStyle:{
+//                 backgroundColor:"orange"
+//               },
+//               headerTitleStyle:{
+//                 fontSize:26,
+//                 fontWeight:"bold"
+//               },
+//               headerTitleAlign:"center",
+//               headerRight: () => <Icon source="bell" size={26} />,
+//               headerLeft: () => <Icon source="home" size={26} />,
+//               // headerBackButtonDisplayMode:"minimal"
+//               animation:"fade"
+//             }
+//           }>
+//             <Stack.Screen name="Task" component={Task}></Stack.Screen>
+//             <Stack.Screen name="Task1" component={Task1}></Stack.Screen>
+//           </Stack.Navigator> */}
+
+//         </NavigationContainer>
+//       </PaperProvider>
+//     </SafeAreaProvider>
+//   );
+// };
+
+// export default App;
+
+
+// 
+
+
+
+
+
+import React from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { Provider as PaperProvider } from "react-native-paper";
+// import Galleryimages from "./Galleryimages.jsx";
+// import Sharesheet from "./Sharesheet.jsx";
+import CameraAccess from "./CameraAccess";
+const App = () =>{
+  return(
+     <SafeAreaProvider>
+      <PaperProvider>
+        <CameraAccess />
+      </PaperProvider>
+     </SafeAreaProvider>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
