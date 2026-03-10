@@ -56,12 +56,13 @@ import { Provider as PaperProvider } from "react-native-paper";
 // import Galleryimages from "./Galleryimages.jsx";
 // import Sharesheet from "./Sharesheet.jsx";
 // import CameraAccess from "./CameraAccess";
-import Microphone from "./Microphone"
+// import Microphone from "./Microphone"
+import FingerPrint from "./FingerPrint";
 const App = () =>{
   return(
      <SafeAreaProvider>
       <PaperProvider>
-        <Microphone/>
+        <FingerPrint/>
       </PaperProvider>
      </SafeAreaProvider>
   )
